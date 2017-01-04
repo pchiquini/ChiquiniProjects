@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F053D7B1-FEEE-9E83-0E3A-A5E55AC25BFD" name="F15F4 Task">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>09C541B2-B19F-406E-B1F7-7F2BFB3421FF</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="task id" id="2C9784CB-6449-2FEF-4DFA-884ECF0886A0">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>7C5D132F-7E12-E7F5-FA8E-27D1C27A020E</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eff date" id="F67E0D48-06BC-BE20-40EF-9B100A654E6A">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>54ECD500-9989-C4B0-9757-A4D825F34452</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task abbrev" id="01C493ED-EFEB-DF2C-5BC9-57AFA71166EC">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>78CF435A-F037-4016-0ED5-D9AF10AD00CB</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="task desc" id="60874CE6-482D-0563-D1A6-5E3E44742045">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>94702B40-3AAA-0629-571D-D4FD3B435CF0</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F1A856D6-EE41-DED4-15D4-5C464776ABF4" name="F15F4 Task PK">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>1BBC4BC9-015C-1553-A399-988649918188</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2C9784CB-6449-2FEF-4DFA-884ECF0886A0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

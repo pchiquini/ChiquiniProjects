@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8F309477-FC2A-D630-8EB7-D559EF0E237B" name="F15F4 Comment">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>9FAFFB1D-CAE0-3029-AD5E-DF704C2C638E</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="comment id" id="5C47B9F8-00E2-0C6F-B54F-EE0E44214D1B">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>1351FAE2-9609-FC81-BEC5-2A0269E864A1</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="entry date" id="91F6E5E5-C2BB-549C-714E-890972E4BF7A">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>1A230189-8837-744B-6B6E-3F05B6CBAEFB</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="comments" id="7BBDFEA2-9837-62F6-99C4-2BE94541F86F">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>8EF3EF8F-D03F-CAE7-3C58-3C105D3046F8</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15F4 RFE rfe id" id="0158277D-CFB1-C2C5-D366-5736AAA636B7">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>DC562340-2165-D25B-2711-EBBA4BB54900</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AB30B9C7-B7B8-28CD-D934-6EC2E47844C0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="F15F4 Emp emp id" id="9B363E8C-F6A4-6E07-526A-3C5DDFE5758C">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>D99B0AF7-09CF-73AC-F19E-B451EFD31BF5</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>17E2113B-A4DC-3AD6-6D0F-7EF22CCD74E0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E9C89568-AB72-E4D0-CD59-94D2B2F67E0E" name="F15F4 Comment PK">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-19 00:01:29 UTC</createdTime>
+<generatorID>19C5DE0D-79B9-6153-1EFC-B9C643C30999</generatorID>
+<ownerDesignName>Project - Logical</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5C47B9F8-00E2-0C6F-B54F-EE0E44214D1B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

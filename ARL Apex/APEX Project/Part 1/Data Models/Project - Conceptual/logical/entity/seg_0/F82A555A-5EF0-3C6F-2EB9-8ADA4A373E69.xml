@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F82A555A-5EF0-3C6F-2EB9-8ADA4A373E69" name="F15F4_Status">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:29:15 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="status_id" id="B72DB680-B1B8-3817-EFDC-79487950053C">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:29:26 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_status" id="A10868FC-880B-FC8C-E82E-021556111F04">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-16 23:55:08 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="description" id="C9A1DCF2-4D66-9EA8-613A-A0338F7E62DF">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-16 23:55:32 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BAFF8F16-EE31-C48E-37A9-D955644EB0EB" name="F15F4_Status PK">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:29:31 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>B72DB680-B1B8-3817-EFDC-79487950053C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

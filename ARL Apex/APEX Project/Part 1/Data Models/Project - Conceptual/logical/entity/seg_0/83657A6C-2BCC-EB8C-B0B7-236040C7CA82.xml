@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="83657A6C-2BCC-EB8C-B0B7-236040C7CA82" name="F15F4_Hist">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:31:33 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="hist_id" id="08C7CE70-086F-B51A-D494-DA5667EDC2E3">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:31:54 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="eff_date" id="9A8949FB-F6F1-7A8E-D4CE-FE7E68A4929A">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-17 00:00:52 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rfe_id" id="DBC1D224-5AC1-4314-7F8E-BF9A020DB08C">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:32:37 UTC</createdTime>
+<generatorID>F7FF25EF-A9BF-D98D-A846-B5CDA36C06BA</generatorID>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>1488F7F6-70F0-B106-70AE-6C189E658C42</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status_id" id="7A1AB96B-2D52-D45C-F834-6D2AB7B18CA4">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-17 23:37:07 UTC</createdTime>
+<generatorID>C04E2777-9D39-229C-24E1-CC7BC163B24E</generatorID>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>B72DB680-B1B8-3817-EFDC-79487950053C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="emp_id" id="3747004D-CED8-8008-C0F9-A00281FB62DB">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-17 23:38:01 UTC</createdTime>
+<generatorID>67BA6C79-3BC8-E84F-9EEE-991254577D7D</generatorID>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>23943F61-BBAD-8B78-D114-7AD6C5867424</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4DD1240F-0F6F-84CD-AE10-3B9D5944D9AC" name="F15F4_Hist PK">
+<createdBy>trand_000</createdBy>
+<createdTime>2015-11-02 22:32:05 UTC</createdTime>
+<ownerDesignName>Project - Class Conceptual v2</ownerDesignName>
+<engineerTo>
+<item key="D6093D28-D648-FF68-194E-BCB012D4D4B1" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>08C7CE70-086F-B51A-D494-DA5667EDC2E3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

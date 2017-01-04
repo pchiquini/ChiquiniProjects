@@ -1,0 +1,123 @@
+SQL CODE USED IN APPLICATION:
+
+Select sys_admin
+From F15F4_Emp
+Where emp_id = :P0_EMP_ID
+Order By 1;
+
+Select rfe_status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+WHERE h.F15F4_RFE_rfe_id = :P0_CUR_RFE
+ORDER BY hist_id DESC
+FETCH FIRST ROW ONLY;
+
+Select SYSDATE
+From dual;
+
+select Distinct 'Recall' as Recall,rfe_id,explanation,alt_protections,approval_date,r.F15F4_Status_status_id as Status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+where r.F15F4_Emp_emp_id = :P0_EMP_ID
+
+select Distinct 'Submit' as Submit,rfe_id,explanation,alt_protections,approval_date,r.F15F4_Status_status_id as Status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+where r.F15F4_Emp_emp_id = :P0_EMP_ID
+and (r.F15F4_Status_status_id = 1 or r.F15F4_Status_status_id = 3 or r.F15F4_Status_status_id = 4)
+
+select Distinct 'Approve' as Approve,rfe_id,explanation,alt_protections,approval_date,r.F15F4_Status_status_id as Status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+where (r.F15F4_Status_status_id = 2)
+
+select Distinct 'Approve' as Approve,rfe_id,explanation,alt_protections,approval_date,r.F15F4_Status_status_id as Status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+where (r.F15F4_Status_status_id = 6)
+
+select Distinct 'Approve' as Approve,rfe_id,explanation,alt_protections,approval_date,r.F15F4_Status_status_id as Status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+where (r.F15F4_Status_status_id = 7)
+
+select Distinct 'Approve' as Approve,rfe_id,explanation,alt_protections,approval_date,r.F15F4_Status_status_id as Status
+From F15F4_Rfe r join F15F4_Hist h
+on r.rfe_id = h.F15F4_RFE_rfe_id
+JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+where (r.F15F4_Status_status_id = 8)
+
+Select 'Duplicate' as Duplicate,rfe_id,explanation,alt_protections,F15F4_Status_status_id as Status_ID,approval_date,created,created_by,row_version_number,updated,updated_by
+From F15F4_Rfe r
+WHERE r.rfe_id = :P0_CUR_RFE
+Order By 1;
+
+select hist_id,eff_date,status_id,rfe_status,description
+from F15F4_Hist h JOIN F15F4_Status s
+on  h.F15F4_Status_status_id = s.status_id
+WHERE h.F15F4_RFE_rfe_id = :P0_CUR_RFE
+Order By hist_id DESC;
+
+select COMMENT_ID, 
+        ENTRY_DATE, 
+        COMMENTS
+from F15F4_Comment
+WHERE F15F4_RFE_rfe_id = :P0_CUR_RFE
+Order By 1;
+
+select CONTACT_ID,
+       emp_name as CONTACT_NAME,
+       EFF_DATE,
+       COMMENTS,
+       c.CREATED,
+       c.CREATED_BY,
+       c.ROW_VERSION_NUMBER,
+       c.UPDATED,
+       c.UPDATED_BY,
+       r.role_type,
+       r.description
+  from F15F4_CONTACT c JOIN F15F4_EMP e
+  on c.F15F4_Emp_emp_id = e.emp_id
+  JOIN F15F4_Role r on r.role_id = c.F15F4_Role_role_id
+  where F15F4_RFE_RFE_ID = :P0_CUR_RFE
+
+select "DOC_ID", 
+"NAME",
+dbms_lob.getlength("BLOB") "BLOB",
+"COMMENTS",
+"TAGS",
+"CREATED",
+"CREATED_BY"
+from "#OWNER#"."F15F4_DOC" 
+  WHERE F15F4_RFE_rfe_id = :P0_CUR_RFE
+
+Select 'Duplicate' as Duplicate,rfe_id,explanation,alt_protections,F15F4_Status_status_id as Status_ID,approval_date,created,created_by,row_version_number,updated,updated_by
+From F15F4_Rfe r
+WHERE r.rfe_id = :P0_CUR_RFE
+Order By 1;
+
+Select sys_admin,lab_dir,exec_dir,chairperson
+From F15F4_Emp
+Where emp_id = :P0_EMP_ID
+and (sys_admin = 'Y'or lab_dir = 'Y' or exec_dir = 'Y' or chairperson = 'Y')
+
+Select F15F4_Status_status_id
+from F15F4_Rfe
+Where rfe_id = :P0_CUR_RFE and (F15F4_Status_status_id = 1 or F15F4_Status_status_id = 4 or F15F4_Status_status_id = 5 or F15F4_Status_status_id = 9)
+
+
+
+
